@@ -1,0 +1,291 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    background-image: linear-gradient(#773594, #bb5d8e);
+    height: 100%;
+    position : relative;
+    color: black;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+.register-title {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    margin-left: 230px;
+    margin-right: 230px;
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.margin-top {
+    margin-top: 15px;
+}
+
+.background-color {
+    margin-bottom: 1600px ;
+}
+
+.center {
+    margin: 200px 160px 0px 160px;
+    padding-left: 50px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+    border: solid white;
+    border-radius: 30px;
+    background-color: white;
+    box-shadow: 0px 0px 88px -21px black;
+}
+
+.champ {
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: solid #d8d8d8;
+    border-radius: 8px;
+    height:75px;
+    width:400px;
+}
+
+.submit {
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 60px;
+    height:90px;
+    width:190px;
+    margin-left: 170px;
+    border-radius: 50px;
+    border-color: #f5d351;
+    background-color: #f5d351;
+}
+
+h1 {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 60px;
+    font-style: italic;
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    color: white;
+}
+
+.grid-container {
+    grid-gap: 20px 20px;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas: "smile sad poker" "cool laugh love" "joke smack ouf" "sleep chock angel";
+}
+
+.smile {
+    background-image:url('../img/sourire-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: smile;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sad {
+    background-image:url('../img/triste-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: sad;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.poker {
+    background-image:url('../img/poker-face-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: poker;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.cool {
+    background-image:url('../img/cool-face.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: cool;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.laugh {
+    background-image:url('../img/mdr-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: laugh;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.love {
+    background-image:url('../img/coeur-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: love;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.joke {
+    background-image:url('../img/langue-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: joke;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.smack {
+    background-image:url('../img/bisous-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: smack;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.ouf {
+    background-image:url('../img/ouf-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: ouf;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.sleep {
+    background-image:url('../img/dodo-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: sleep;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.angel {
+    background-image:url('../img/ange-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: angel;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.chock {
+    background-image:url('../img/outre-emoji.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 250px;
+    grid-area: chock;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.carre {
+    border-radius: 15px;
+    margin-top : 100px;
+    border : solid white;
+    background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.zone {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-position: center;
+}
+
+.text-area {
+    background-color: #e8e8e9;
+    border: none;
+    border-radius: 20px;
+    resize: none;
+    font-size: 40px;
+}
+
+.skip-okay {
+    margin-left: 115px;
+    font-weight: bold;
+    font-size: 30px;
+    height:90px;
+    width:250px;
+    border-radius: 50px;
+    border-color: #f5d351;
+    background-color: #f5d351;
+}
+
+.daily-mood{
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.img-left {
+    width: 23%;
+    margin-right: 30px;
+    float: left;
+}
+
+.daily-mood > .float-left{
+    float:left;
+}
+
+.float-right{
+    float:left;
+}
+
+.p-daily{
+    font-size: 12px;
+    color: gray;
+    line-height:10px
+}
+
+.p-daily-bold{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.calendar {
+    width: 7%;
+    float:left;
+}
