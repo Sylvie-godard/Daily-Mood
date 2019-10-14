@@ -274,7 +274,7 @@ h2 {
 }
 
 .p-daily{
-    font-size: 12px;
+    font-size: 40px;
     color: gray;
     line-height:10px
 }
@@ -282,7 +282,7 @@ h2 {
 .p-daily-bold{
     margin-top: 20px;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 60px;
 }
 
 .calendar {
