@@ -2,9 +2,9 @@
 
 ** Version PHP 7.2 **
 ## Install Project
-### run server
-`make server`
-
+- `$ git clone https://github.com/Sylvie-godard/daily-mood.git`
+###Lancer le server
+- `php -S localhost:8000 -d display_errors=1`
 
 ## Contributors
 - Sylvie Godard 
