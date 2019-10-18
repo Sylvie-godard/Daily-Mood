@@ -1,3 +1,17 @@
+<?php
+
+use src\DB\ConnectDB;
+use src\Mood\Repository\MoodBaseRepository;
+
+include_once("src/DB/ConnectDB.php");
+include_once("src/Mood/Repository/MoodBaseRepository.php");
+include_once("src/Mood/Repository/MoodRepository.php");
+
+$connectDB = new ConnectDB();
+$moodBaseRepository = new MoodBaseRepository($connectDB);
+$moodsBase = $moodBaseRepository->findAll();
+?>
+
 <!DOCTYPE html>
 <html>
     <head lang="fr">
@@ -9,18 +23,17 @@
         <h1>HOW ARE YOU TODAY ?</h1>
         <h2>PICK YOUR DAILY MOOD</h2>
         <div class="grid-container">
-            <a href="mood.php?id=1" class="smile" id="smile"></a>
-            <a href="mood.php?id=2" class="sad" id="sad"></a>
-            <a href="mood.php?id=3" class="poker" id="poker"></a>
-            <a href="mood.php?id=4" class="cool" id="cool"></a>
-            <a href="mood.php?id=5" class="laugh" id="laugh"></a>
-            <a href="mood.php?id=6" class="love" id="love"></a>
-            <a href="mood.php?id=7" class="joke" id="joke"></a>
-            <a href="mood.php?id=8" class="smack" id="smack"></a>
-            <a href="mood.php?id=9" class="ouf" id="ouf"></a>
-            <a href="mood.php?id=10" class="sleep" id="sleep"></a>
-            <a href="mood.php?id=11" class="angel" id="angel"></a>
-            <a href="mood.php?id=12" class="chock" id="chock"></a>
+            <?php
+            $linksList = [];
+            foreach ($moodsBase as $moodBase) {
+                $id = $moodBase['id'];
+                $moodLabel = $moodBase['label'];
+                $linksList[] =  <<<EOT
+                <a href="mood.php?id=$id" class="$moodLabel" id="smile"></a>
+EOT;
+            }
+            echo \implode($linksList);
+            ?>
         </div>
     </body>
 </html>

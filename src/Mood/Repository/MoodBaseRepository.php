@@ -16,8 +16,15 @@ class MoodBaseRepository
         $this->dbHandler = $connectDB->getConnectDb();
     }
 
+    public function findAll(): array
+    {
+        $query = $this->dbHandler->prepare('SELECT * FROM `mood_base`');
+        $query->execute();
 
-    public function findById(int $id)
+        return $query->fetchAll();
+    }
+
+    public function findById(int $id): array
     {
         $query = $this->dbHandler->prepare('SELECT * FROM `mood_base` WHERE id = :id');
         $query->bindParam(':id', $id);

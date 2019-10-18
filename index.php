@@ -12,7 +12,6 @@ $existUser = false;
 
 if (! empty($_POST)) {
     $data = [];
-    extract($_POST);
 
     $username = $_POST['username'];
     $password = $_POST['password'];

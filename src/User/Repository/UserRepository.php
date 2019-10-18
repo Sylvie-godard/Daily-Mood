@@ -45,6 +45,7 @@ class UserRepository
      */
     public function save(string $username, string $password): bool
     {
+        $password = \password_hash($password, PASSWORD_DEFAULT);
         $request = $this->dbHandler->prepare('INSERT INTO `user` (`username`, `password`) VALUES (:username, :password)');
         $request->bindParam('username', $username);
         $request->bindParam('password', $password);

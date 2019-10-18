@@ -11,9 +11,10 @@ $connectDB = new ConnectDB();
 $wrongDatas = false;
 
 if (! empty($_POST)) {
-    extract($_POST);
-
     $userRepository = new UserRepository($connectDB);
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
 
     try {
         $result = $userRepository->HasUserByUsername($username);
@@ -22,7 +23,7 @@ if (! empty($_POST)) {
     }
 
     if (! $wrongDatas) {
-        if ($password === $result['password'] && $username === $result['username']) {
+        if (\password_verify($password, $result['password']) && $username === $result['username']) {
             session_start();
             $_SESSION['username'] = $result['username'];
             header("location:pick-your-mood.php");

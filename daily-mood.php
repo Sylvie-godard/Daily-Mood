@@ -28,13 +28,13 @@ $moods = $moodRepository->findByUserName($_SESSION['username']);
         $label = $mood['mood_label'];
         $date = $mood['creation_date'];
 
-        print("
+        echo <<<EOT
         <div class='daily-mood'>
             <img src='public/img/$label' class='img-left'/>
-            <img src='public/img/calendar-icon.png' class='calendar'></img><p class='p-daily'>$date</p>
+            <img src='public/img/calendar-icon.png' class='calendar'/><p class='p-daily'>$date</p>
             <p class='p-daily-bold'>$description </p>
         </div>
-        ");
+EOT;
     }
 ?>
 
