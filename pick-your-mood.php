@@ -28,8 +28,9 @@ $moodsBase = $moodBaseRepository->findAll();
             foreach ($moodsBase as $moodBase) {
                 $id = $moodBase['id'];
                 $moodLabel = $moodBase['label'];
+                $moodUrl = $moodBase['url'];
                 $linksList[] =  <<<EOT
-                <a href="mood.php?id=$id" class="$moodLabel" id="smile"></a>
+                <a href="mood.php?id=$id" class="$moodLabel" style="background-image:url('public/img/$moodUrl');" id="smile"></a>
 EOT;
             }
             echo \implode($linksList);

@@ -53,7 +53,7 @@ class MoodRepository
         );
 
         $request->bindParam(':mood_label', $moodLabel);
-        $request->bindParam(':creation_date', $creationDate->format('l j F Y'));
+        $request->bindParam(':creation_date', $creationDate);
         $request->bindParam(':description', $description);
         $request->bindParam(':username', $username);
 

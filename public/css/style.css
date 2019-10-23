@@ -92,8 +92,7 @@ h2 {
     grid-template-areas: "smile sad poker" "cool laugh love" "joke smack ouf" "sleep chock angel";
 }
 
-.smile {
-    background-image:url('../img/sourire-emoji.png');
+.emoji-container {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 250px;
